@@ -21,12 +21,12 @@ export default function Index() {
         <section id="animales" className="section">
           <h2>Nuestros Animales</h2>
           <div className="animals">
-            <AnimalCard src="/leon.jpg" nombre="León" desc="El rey de la selva, conocido por su imponente melena y rugido." />
-            <AnimalCard src="/elefante.jpg" nombre="Elefante" desc="El gigante gentil, famoso por su memoria y trompa versátil." />
-            <AnimalCard src="/loro.jpg" nombre="Loro" desc="Un ave colorida y parlanchina que encanta a todos." />
-            <AnimalCard src="/tigre.jpg" nombre="Tigre" desc="Un depredador ágil y poderoso con un pelaje rayado único." />
-            <AnimalCard src="/jirafa.jpg" nombre="Jirafa" desc="El animal más alto del mundo, conocido por su largo cuello." />
-            <AnimalCard src="/cebra.jpg" nombre="Cebra" desc="Famosa por sus rayas únicas, cada una tiene un patrón diferente." />
+            <AnimalCard src="/animales/leon.jpg" nombre="León" desc="El rey de la selva, conocido por su imponente melena y rugido." />
+            <AnimalCard src="/animales/elefante.jpg" nombre="Elefante" desc="El gigante gentil, famoso por su memoria y trompa versátil." />
+            <AnimalCard src="/animales/loro.jpg" nombre="Loro" desc="Un ave colorida y parlanchina que encanta a todos." />
+            <AnimalCard src="/animales/tigre.jpg" nombre="Tigre" desc="Un depredador ágil y poderoso con un pelaje rayado único." />
+            <AnimalCard src="/animales/jirafa.jpg" nombre="Jirafa" desc="El animal más alto del mundo, conocido por su largo cuello." />
+            <AnimalCard src="/animales/cebra.jpg" nombre="Cebra" desc="Famosa por sus rayas únicas, cada una tiene un patrón diferente." />
           </div>
         </section>
 

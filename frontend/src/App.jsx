@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cabecera from "./Main/Cabecera";
 import Index from "./Pages/Index";
 
-
 import Calendario from "./Pages/Calendario";
 
 import Animales from "./Pages/Descubrenos/Animales";
@@ -19,7 +18,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route element={<Cabecera />}>
-          <Route path="/main" element={<Index />} />
+          <Route path="/" element={<Index />} />
           <Route path="/Calendario" element={<Calendario />} />
           <Route path="/Animales" element={<Animales />} />
           <Route path="/Ecosistemas" element={<Ecosistemas />} />

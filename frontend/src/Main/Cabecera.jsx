@@ -16,7 +16,7 @@ export default function Cabecera() {
 
       {mostrarNav && (
         <nav className="zoo-nav">
-          <Link to="/main">Inicio</Link>
+          <Link to="/">Inicio</Link>
           <Link to="/Calendario">Ver calendario</Link>
 
           <div className="dropdown">
