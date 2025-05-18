@@ -1,0 +1,104 @@
+body {
+  background: linear-gradient(135deg, #e0f7fa 60%, #f9e7c4 100%);
+}
+
+.container-contacto {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fffbe6;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.09);
+  padding: 32px 24px;
+}
+
+.container-contacto h1 {
+  text-align: center;
+  color: #3d5a1a;
+  margin-bottom: 18px;
+}
+
+.contact-info {
+  margin-bottom: 28px;
+}
+
+.contact-info div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 1.08rem;
+  color: #5c4326;
+}
+
+.contact-info svg {
+  margin-right: 10px;
+  color: #a3c76d;
+  font-size: 1.3em;
+  min-width: 28px;
+  text-align: center;
+}
+
+.contact-info a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #3d5a1a;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #b7cfa7;
+  border-radius: 5px;
+  background: #f6fbe9;
+  margin-bottom: 14px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background: linear-gradient(90deg, #a3c76d 60%, #3d5a1a 100%);
+  color: #fff;
+  padding: 10px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 700;
+  width: 100%;
+  margin-top: 6px;
+  letter-spacing: 1px;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(90deg, #3d5a1a 60%, #a3c76d 100%);
+}
+
+.mensaje-exito {
+  color: #388e3c;
+  text-align: center;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.mapa {
+  margin-top: 24px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(44, 62, 80, 0.08);
+}
+
+@media (max-width: 700px) {
+  .container-contacto {
+    padding: 18px 4vw;
+  }
+}

@@ -29,13 +29,6 @@ export default function Index() {
             <AnimalCard src="/animales/cebra.jpg" nombre="Cebra" desc="Famosa por sus rayas únicas, cada una tiene un patrón diferente." />
           </div>
         </section>
-
-        <section id="contacto" className="section">
-          <h2>Contacto</h2>
-          <p>Dirección: Calle Fauna 123, Ciudad Animalia</p>
-          <p>Teléfono: +34 123 456 789</p>
-          <p>Email: info@zoologicomaravillas.com</p>
-        </section>
       </div>
     </>
   );

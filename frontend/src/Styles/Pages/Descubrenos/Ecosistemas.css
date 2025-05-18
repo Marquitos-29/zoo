@@ -1,0 +1,85 @@
+.ecosistemas-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px 40px;
+  background-color: #eaf6ff;
+}
+
+.ecosistemas-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ecosistemas-header h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.ecosistemas-header p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.ecosistemas-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.ecosistema-card {
+  background: #fffbe6;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  padding: 28px 24px;
+  max-width: 340px;
+  min-width: 260px;
+  flex: 1 1 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.ecosistema-card:hover {
+  transform: translateY(-5px);
+}
+
+.eco-icon {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.eco-icon.green {
+  color: #388e3c;
+}
+.eco-icon.blue {
+  color: #1976d2;
+}
+.eco-icon.brown {
+  color: #b8860b;
+}
+.eco-icon.cyan {
+  color: #00bcd4;
+}
+
+.ecosistema-card h3 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.ecosistema-card p {
+  color: #5c4326;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .ecosistemas-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -7,10 +7,9 @@ const { query } = require('../db');
 router.get('/', async (req, res) => {
   try {
     const results = await query('SELECT * FROM TAnimal');
-    console.log('Animales obtenidos:', results); // 👈 Añade esto
     res.json(results);
   } catch (error) {
-    console.error('Error al obtener los animales:', error); // 👈 Confirma aquí
+    console.error('Error al obtener los animales:', error);
     res.status(500).json({ error: 'Error al obtener los animales' });
   }
 });

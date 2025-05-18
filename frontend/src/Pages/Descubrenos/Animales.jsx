@@ -1,6 +1,6 @@
 // Pages/Animales.jsx
 import { useEffect, useState } from "react";
-import "../../Styles/Pages/Animales.css";
+import "../../Styles/Pages/Descubrenos/Animales.css";
 
 export default function Animales() {
   const [animales, setAnimales] = useState([]);
