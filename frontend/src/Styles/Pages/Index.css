@@ -1,0 +1,122 @@
+/* index.css */
+.hero {
+  background-image: url('https://source.unsplash.com/1600x600/?zoo,animals');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-blanco);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h2 {
+  font-size: 2.5em;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--color-verde);
+}
+
+.animals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.animal-card {
+  background-color: var(--color-blanco);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(33.333% - 20px);
+  text-align: center;
+}
+
+.animal-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.animal-card h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: var(--color-texto);
+}
+
+.animal-card p {
+  padding: 0 10px 10px;
+  color: var(--color-secundario);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: var(--color-blanco);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #00a000;
+  color: var(--color-blanco);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: var(--color-verde-oscuro);
+}
+
+footer {
+  background-color: var(--color-footer);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}

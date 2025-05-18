@@ -1,0 +1,25 @@
+/* General.css */
+:root {
+  --color-verde: #4caf50;
+  --color-verde-hover: #45a049;
+  --color-verde-oscuro: #008800;
+  --color-fondo: #f0f8ff;
+  --color-texto: #333;
+  --color-secundario: #666;
+  --color-blanco: white;
+  --color-footer: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
