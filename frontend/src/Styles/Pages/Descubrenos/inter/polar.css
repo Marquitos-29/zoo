@@ -1,0 +1,88 @@
+/* Fondo y fuente general */
+.expedicion-polar-wrapper {
+  background: linear-gradient(135deg, #e0f7fa 60%, #b3e5fc 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Contenedor principal */
+.expedicion-polar-container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 30px 10px;
+}
+
+/* Título */
+.expedicion-title {
+  text-align: center;
+  color: #1976d2;
+  margin-bottom: 30px;
+}
+
+/* Contenedor de tarjetas */
+.cards-polar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+/* Tarjeta */
+.card-polar {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.13);
+  padding: 28px 28px 22px 28px;
+  max-width: 420px;
+  min-width: 300px;
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ícono grande */
+.card-icon {
+  font-size: 5rem;
+  color: #1976d2;
+  margin-bottom: 18px;
+}
+
+/* Título dentro de la tarjeta */
+.card-title {
+  color: #1976d2;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Texto de información */
+.card-info {
+  color: #37474f;
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+/* Lista de normas o condiciones */
+.card-list {
+  padding-left: 18px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #37474f;
+}
+
+/* Precio destacado */
+.card-price {
+  font-size: 1.2rem;
+  color: #1976d2;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+/* Mensaje final destacado */
+.card-footer {
+  margin-top: 18px;
+  color: #1976d2;
+  font-weight: bold;
+}

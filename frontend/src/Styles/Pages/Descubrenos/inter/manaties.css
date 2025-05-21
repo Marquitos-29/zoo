@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.manati-container {
+  background: linear-gradient(135deg, #e0f7fa 60%, #b2dfdb 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  padding: 30px 10px;
+  min-height: 100vh;
+}
+
+.manati-title {
+  text-align: center;
+  color: #009688;
+  margin-bottom: 30px;
+}
+
+.cards-manati {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.card-manati {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.13);
+  padding: 28px;
+  max-width: 420px;
+  min-width: 300px;
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-manati h2 {
+  color: #009688;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-manati ul {
+  padding-left: 18px;
+  margin-top: 10px;
+}
+
+.card-manati li {
+  margin-bottom: 6px;
+  color: #37474f;
+}
+
+.card-manati .precio {
+  font-size: 1.2rem;
+  color: #009688;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.card-manati .precio span {
+  font-size: 1rem;
+  color: #009688;
+}
+
+.card-manati .info {
+  color: #37474f;
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-manati .icon {
+  font-size: 5rem;
+  color: #009688;
+  margin-bottom: 18px;
+}
+
+.section-subtitle {
+  color: #009688;
+  margin-top: 18px;
+}
+
+.mensaje-final {
+  margin-top: 18px;
+  color: #009688;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .cards-manati {
+    flex-direction: column;
+    align-items: center;
+  }
+}

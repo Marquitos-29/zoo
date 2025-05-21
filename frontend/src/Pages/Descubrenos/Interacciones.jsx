@@ -1,10 +1,11 @@
-import "../../Styles/Pages/Descubrenos/Interacciones.css";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faKiwiBird,
   faHippo,
   faDragon,
 } from "@fortawesome/free-solid-svg-icons";
+import "../../Styles/Pages/Descubrenos/Interacciones.css";
 
 export default function Interacciones() {
   return (
@@ -23,9 +24,9 @@ export default function Interacciones() {
           </div>
           <div className="card-content">
             <h3>Expedición polar</h3>
-            <a href="/expedicion-polar" className="btn">
+            <Link to="/expedicion-polar" className="btn">
               Ver más
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -35,9 +36,9 @@ export default function Interacciones() {
           </div>
           <div className="card-content">
             <h3>Experiencia con manatíes</h3>
-            <a href="/experiencia-manaties" className="btn">
+            <Link to="/expedicion-manatis" className="btn">
               Ver más
-            </a>
+             </Link>
           </div>
         </div>
 
@@ -47,9 +48,9 @@ export default function Interacciones() {
           </div>
           <div className="card-content">
             <h3>Ver comer a los caimanes</h3>
-            <a href="/experiencia-caimanes" className="btn">
+            <Link to="/Cocodrilos" className="btn">
               Ver más
-            </a>
+             </Link>
           </div>
         </div>
       </div>

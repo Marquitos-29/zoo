@@ -1,0 +1,36 @@
+.cards-caiman {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+/* Las tarjetas */
+.card-caiman {
+  flex: 1 1 calc(33.33% - 32px); /* 3 tarjetas por fila con espacio */
+  max-width: 320px;
+  min-width: 280px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.13);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Responsive: menos de 900px, 2 por fila */
+@media (max-width: 900px) {
+  .card-caiman {
+    flex: 1 1 calc(50% - 32px);
+    max-width: 400px;
+  }
+}
+
+/* Responsive: menos de 600px, 1 por fila */
+@media (max-width: 600px) {
+  .card-caiman {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
