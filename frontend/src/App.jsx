@@ -4,6 +4,7 @@ import Cabecera from "./Main/Cabecera";
 import Index from "./Pages/Index";
 
 import Calendario from "./Pages/Calendario";
+import Entradas from "./Pages/Entradas"
 
 import Animales from "./Pages/Descubrenos/Animales";
 import Ecosistemas from "./Pages/Descubrenos/Ecosistemas";
@@ -28,11 +29,12 @@ export default function App() {
             <Route path="/Ecosistemas" element={<Ecosistemas />} />
             <Route path="/Interacciones" element={<Interacciones />} />
             <Route path="/Contacto" element={<Contacto />} />
-          </Route>
-          <Route path="/Expedicion-Polar" element={<ExpedicionPolar />} />
-          <Route path="/Expedicion-Manatis" element={<ExpedicionManaties />} />
-          <Route path="/Cocodrilos" element={<Cocodrilos />} />
-</Routes>
+            <Route path="/Entradas" element={<Entradas />} />
+            <Route path="/Expedicion-Polar" element={<ExpedicionPolar />} />
+            <Route path="/Expedicion-Manatis" element={<ExpedicionManaties />} />
+            <Route path="/Cocodrilos" element={<Cocodrilos />} />
+          </Route> 
+      </Routes>
     </Router>
   );
 }

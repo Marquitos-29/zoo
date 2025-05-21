@@ -9,5 +9,7 @@ app.use(express.json());
 
 // Rutas del zoológico
 app.use('/api/animales', require('./scripts/Animales'));
+app.use('/api/eventos', require('./scripts/Eventos'))
+app.use('/api/Entradas', require('./scripts/Entradas'))
 
 module.exports = app;

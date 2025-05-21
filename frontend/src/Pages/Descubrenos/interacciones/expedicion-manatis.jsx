@@ -1,20 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWater, faHippo, faTicket } from "@fortawesome/free-solid-svg-icons";
 import "../../../Styles/Pages/Descubrenos/inter/manaties.css";
 
 const ExperienciaManaties = () => {
   return (
     <div className="manati-container">
       <h1 className="manati-title">
-        <i className="fa-solid fa-water"></i> Experiencia con Manatíes{" "}
-        <i className="fa-solid fa-water"></i>
+        <FontAwesomeIcon icon={faWater} /> Experiencia con Manatíes{" "}
+        <FontAwesomeIcon icon={faWater} />
       </h1>
       <div className="cards-manati">
         {/* Card 1 */}
         <div className="card-manati">
           <div className="card-icon">
-            <i className="fa-solid fa-hippo"></i>
+            <FontAwesomeIcon icon={faHippo} />
           </div>
           <h2>Sobre los Manatíes</h2>
           <div className="info">
@@ -34,7 +34,7 @@ const ExperienciaManaties = () => {
         {/* Card 2 */}
         <div className="card-manati">
           <div className="icon">
-            <i className="fa-solid fa-ticket"></i>
+            <FontAwesomeIcon icon={faTicket} />
           </div>
           <h2>Entradas y Condiciones</h2>
           <div className="info">

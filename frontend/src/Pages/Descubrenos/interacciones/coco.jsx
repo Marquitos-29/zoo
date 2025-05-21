@@ -1,19 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWater, faDragon, faTicket } from "@fortawesome/free-solid-svg-icons";
 import "../../../Styles/Pages/Descubrenos/inter/coco.css";
 
 const CaimanExperience = () => {
   return (
     <div className="container">
       <h1 style={{ textAlign: "center", color: "#388e3c", marginBottom: 30 }}>
-        <i className="fa-solid fa-water"></i> Experiencia viendo comer a los caimanes <i className="fa-solid fa-water"></i>
+        <FontAwesomeIcon icon={faWater} /> Experiencia viendo comer a los caimanes <FontAwesomeIcon icon={faWater} />
       </h1>
       <div className="cards-caiman">
         <div className="card-caiman">
           {/* Icono de caimán (fa-dragon como sustituto) */}
           <div style={{ fontSize: "5rem", color: "#388e3c", marginBottom: 18 }}>
-            <i className="fa-solid fa-dragon"></i>
+            <FontAwesomeIcon icon={faDragon} />
           </div>
           <h2>Sobre los Caimanes</h2>
           <div className="info">
@@ -32,7 +33,7 @@ const CaimanExperience = () => {
         <div className="card-caiman">
           {/* Icono de ticket para entradas */}
           <div style={{ fontSize: "5rem", color: "#388e3c", marginBottom: 18 }}>
-            <i className="fa-solid fa-ticket"></i>
+            <FontAwesomeIcon icon={faTicket} />
           </div>
           <h2>Entradas y Condiciones</h2>
           <div className="info">

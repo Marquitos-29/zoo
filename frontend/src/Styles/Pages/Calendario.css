@@ -1,5 +1,5 @@
 #calendar-container {
-  max-width: 1000px;
+  max-width: 1200px; /* Más ancho */
   margin: 2rem auto;
   background: var(--color-blanco);
   padding: 2rem;
@@ -41,7 +41,7 @@
 #calendar {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 8px;
+  gap: 12px; /* espacio entre celdas */
 }
 
 .calendar-header {
@@ -61,13 +61,13 @@
   border: 1px solid #deb887; /* Marrón clarito */
   padding: 6px;
   text-align: left;
-  min-height: 120px;
+  min-height: 120px; /* ALTURA ORIGINAL */
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.03);
+  font-size: 0.9rem;
 }
 
 .calendar-day.empty {
@@ -78,24 +78,40 @@
 .day-number {
   font-size: 0.9rem;
   font-weight: bold;
-  margin-bottom: 0.3rem;
+  margin-bottom: 2px;
   color: #5a2d0c;
 }
 
 .day-events {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
   width: 100%;
 }
 
+.evento-superior {
+  margin-bottom: 5px;
+  min-height: 40px; /* deja hueco aunque no haya evento */
+}
+
+.evento-inferior {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+/* Estilo base de todos los eventos */
 .calendar-event {
-  background: #3e2f23; /* Marrón petróleo oscuro para eventos */
-  color: var(--color-blanco);
+  display: inline-block;
+  padding: 6px 8px;
   border-radius: 4px;
-  padding: 4px 6px;
-  margin-top: 4px;
+  text-decoration: none;
   font-size: 0.75rem;
+  text-align: center;
   width: 100%;
   box-sizing: border-box;
-  cursor: pointer;
+  font-weight: 500;
   transition: transform 0.2s ease;
 }
 
@@ -103,7 +119,36 @@
   transform: scale(1.03);
 }
 
-.special-event {
-  background: #2c1d12; /* Aún más oscuro para diferenciar */
-  font-style: italic;
+/* Eventos específicos */
+.event-polar {
+  background-color: #007bff; /* Azul */
+  color: white;
+}
+
+.event-manaties {
+  background-color: #17a2b8; /* Azul verdoso */
+  color: white;
+}
+
+.event-caimanes {
+  background-color: #28a745; /* Verde */
+  color: white;
+}
+
+/* Comprar entrada */
+.link-event {
+  background-color: #8b4513; /* Marrón clásico */
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 0.8rem;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.link-event:hover {
+  background-color: #a0522d;
 }

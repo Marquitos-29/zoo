@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faIcicles, faKiwiBird, faTicket } from "@fortawesome/free-solid-svg-icons";
 import "../../../Styles/Pages/Descubrenos/inter/polar.css";
 
 const ExpedicionPolar = () => {
@@ -8,20 +8,23 @@ const ExpedicionPolar = () => {
     <div className="expedicion-polar-wrapper">
       <div className="expedicion-polar-container">
         <h1 className="expedicion-title">
-          <i className="fa-solid fa-icicles"></i> Expedición Polar: Dormir con Pingüinos <i className="fa-solid fa-icicles"></i>
+          <FontAwesomeIcon icon={faIcicles} /> Expedición Polar: Dormir con Pingüinos{" "}
+          <FontAwesomeIcon icon={faIcicles} />
         </h1>
 
         <div className="cards-polar">
           {/* Card 1 */}
           <div className="card-polar">
             <div className="card-icon">
-              <i className="fa-solid fa-kiwi-bird"></i>
+              <FontAwesomeIcon icon={faKiwiBird} />
             </div>
             <h2 className="card-title">Sobre los Pingüinos</h2>
             <div className="card-info">
-              Los pingüinos son aves marinas que no vuelan, adaptadas a la vida en el agua y el frío. Son famosos por su elegante plumaje blanco y negro, su andar divertido y su increíble capacidad para nadar. En nuestra Expedición Polar podrás observarlos de cerca y aprender sobre su comportamiento, alimentación y curiosidades.
+              Los pingüinos son aves marinas que no vuelan, adaptadas a la vida en el agua y el frío.
+              Son famosos por su elegante plumaje blanco y negro, su andar divertido y su increíble capacidad para nadar.
+              En nuestra Expedición Polar podrás observarlos de cerca y aprender sobre su comportamiento, alimentación y curiosidades.
             </div>
-            <h3 style={{ color: "#1976d2", marginTop: 18 }}>Normas para dormir con los pingüinos</h3>
+            <h3 className="card-title">Normas para dormir con los pingüinos</h3>
             <ul className="card-list">
               <li>Respetar el silencio y no molestar a los animales durante la noche.</li>
               <li>No se permite el uso de flashes ni luces intensas.</li>
@@ -35,7 +38,7 @@ const ExpedicionPolar = () => {
           {/* Card 2 */}
           <div className="card-polar">
             <div className="card-icon">
-              <i className="fa-solid fa-ticket"></i>
+              <FontAwesomeIcon icon={faTicket} />
             </div>
             <h2 className="card-title">Entradas y Condiciones</h2>
             <div className="card-info">
@@ -43,7 +46,7 @@ const ExpedicionPolar = () => {
               El precio de la entrada para la Expedición Polar es de:
             </div>
             <div className="card-price">
-              30€ <span style={{ fontSize: "1rem" }}>(solo disponible los viernes)</span>
+              30€ <span>(solo disponible los viernes)</span>
             </div>
             <ul className="card-list">
               <li>Las entradas solo se pueden adquirir en taquilla.</li>
@@ -56,12 +59,6 @@ const ExpedicionPolar = () => {
           </div>
         </div>
       </div>
-
-      {/* Font Awesome CDN */}
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      />
     </div>
   );
 };

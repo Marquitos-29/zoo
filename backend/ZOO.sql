@@ -50,3 +50,14 @@ CREATE TABLE TEntrada (
   Donativos int,
   Precio_f int
 );
+
+CREATE TABLE TEventos (
+Nombre varchar(25) primary key,
+Hora time,
+Dia varchar(10)
+);
+
+INSERT INTO TEventos (Nombre, Hora, Dia) VALUES
+('Expedicion polar', '10:00:00', 'Viernes'),
+('Experiencia con caimanes', '12:00:00', 'Sábado'),
+('Nado con manaties', '14:30:00', 'Domingo');
